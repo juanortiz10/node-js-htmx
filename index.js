@@ -11,6 +11,7 @@ initMongoConfig().catch(console.dir);
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
 app.use('/users', UserRouter);
 
 app.listen(PORT, () => {
